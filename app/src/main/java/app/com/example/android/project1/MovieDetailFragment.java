@@ -31,8 +31,7 @@ public class MovieDetailFragment extends Fragment {
     @BindView(R.id.plot) TextView textViewPlot;
     @BindView(R.id.rating) TextView textViewRating;
     @BindView(R.id.release) TextView textViewRelease;
-    @BindView(R.id.trailer) TextView textViewTrailer;
-    @BindView(R.id.review) TextView textViewReview;
+
 
 
     @Override
@@ -64,14 +63,6 @@ public class MovieDetailFragment extends Fragment {
 
             String date = "Released: " + movie.getMovieRelease();
             textViewRelease.setText(date);
-
-            /*String trailer = "Trailers: " + movie.getTrailer();
-            textViewTrailer.setText(trailer);*/
-
-            String review = "Reviews: " + movie.getReview();
-            textViewReview.setText(review);
-
-
         }
         return rootView;
     }
